@@ -467,8 +467,19 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Roof Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Roof-Washing&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Home Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Home-Washing&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Pressure Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Pressure-Washing&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Pressure Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Pressure-Washing&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Roof Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Roof-Washing&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Home Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Home-Washing&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
+                                                    <a
+                                                        href=" gallery-Pressure-Washing "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Pressure Washing</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
                                                     <a
                                                         href=" gallery-Roof-Washing "
                                                         role="menuitem"
@@ -487,17 +498,6 @@
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Home Washing</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
-                                                    <a
-                                                        href=" gallery-Pressure-Washing "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">Pressure Washing</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -801,6 +801,12 @@
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             <!-- Render each sublink -->
                                             
+                                                <a href="gallery-Pressure-Washing" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Pressure Washing</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
                                                 <a href="gallery-Roof-Washing" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Roof Washing</p>
@@ -810,12 +816,6 @@
                                                 <a href="gallery-Home-Washing" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Home Washing</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
-                                                <a href="gallery-Pressure-Washing" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">Pressure Washing</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -930,15 +930,52 @@
     <div
         x-data="{
         activeImage: 1,
-        amountOfImages: 1,
+        amountOfImages: 6,
         loop() {
             setInterval(() => { this.activeImage = this.activeImage === this.amountOfImages ? 1 : this.activeImage + 1 }, 5000)
         },
-        }"
-            x-init="loop"
-            class="relative flex w-full overflow-x-hidden h-72 md:h-96 lg:h-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
-        >
+    }"
+        x-init="loop"
+        class="relative flex w-full overflow-x-hidden h-72 md:h-96 lg:h-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
+    >
         <!-- Transition Wrapper 1 -->
+        <!-- <div
+            class="absolute inset-0"
+            x-show="activeImage === 1"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            <img
+                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/00159748-c6f0-4c6a-875c-b9bb6881a176.png"
+                alt=""
+            />
+        </div> -->
+        <!-- Transition Wrapper 2 -->
+        <!-- TODO: Add x-cloak to all transition wrappers exept the first one to avoid a flashing on load -->
+        <!-- <div
+            x-cloak
+            class="absolute inset-0"
+            x-show="activeImage === 2"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            <img
+                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                src="https://images.unsplash.com/photo-1484863137850-59afcfe05386?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2048&q=80"
+                alt=""
+            />
+        </div> -->
+
+        
         <div
             class="absolute inset-0"
             x-show="activeImage === 1"
@@ -949,18 +986,99 @@
             x-transition:leave-start="transform"
             x-transition:leave-end="transform -translate-x-full"
         >
-        
-            
             <img
                 class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/446K36U8Q5LZEKJWM53CS57FSFT7ILRW2ZREUYA5.jpeg"
-                alt=""
+                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/00159748-c6f0-4c6a-875c-b9bb6881a176.png"
+                alt="-image"
             />
-                <!-- <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/446K36U8Q5LZEKJWM53CS57FSFT7ILRW2ZREUYA5.jpeg"   alt = "Main hero image of Aftermath Pressure Washing &amp; Roof Washing &amp; Soft Washing LLC performing Pressure Washing &amp; Soft Washing work"  class="object-cover w-full lg:absolute h-80 lg:h-full"> -->
-                
-        
-            
         </div>
+        
+        <div
+            class="absolute inset-0"
+            x-show="activeImage === 2"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            <img
+                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/594c78fb-b175-41f7-b0cd-2c2f54c8d051.png"
+                alt="1"
+            />
+        </div>
+        
+        <div
+            class="absolute inset-0"
+            x-show="activeImage === 3"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            <img
+                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2e400b1e-7c44-471f-a1d2-e367883dfa9f.jpeg"
+                alt="-image"
+            />
+        </div>
+        
+        <div
+            class="absolute inset-0"
+            x-show="activeImage === 4"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            <img
+                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0e1150da-dd5c-4865-a43e-1d7808c54e6b.png"
+                alt="-image"
+            />
+        </div>
+        
+        <div
+            class="absolute inset-0"
+            x-show="activeImage === 5"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            <img
+                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/85a2c7d2-a47b-4c7c-ad68-596cdea2aead.jpeg"
+                alt="-image"
+            />
+        </div>
+        
+        <div
+            class="absolute inset-0"
+            x-show="activeImage === 6"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            <img
+                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2c29b10b-5c9f-4a26-b469-32fe3f6f97ab.jpeg"
+                alt="-image"
+            />
+        </div>
+        
+        <!-- More images here -->
     </div>
     
 </div>
@@ -2414,7 +2532,7 @@
         
         <div class="flex justify-center -m-1">
             <a
-                href="gallery-Roof-Washing"
+                href="gallery-Pressure-Washing"
                 class="inline-block p-1 mt-12 text-xl font-semibold text-center transition  focus:ring-2 focus:outline-none ring-primary ring-offset-2 text-primary hover:text-primary-darker"
                 >See more photos</a
             >
@@ -2741,7 +2859,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-gray-400 rounded  focus:outline-none focus-visible:ring-2 ring-primary"
-                                aria-controls="33744"
+                                aria-controls="33747"
                                 :aria-expanded="expanded"
                             >
                                 <span class="font-medium text-gray-900">What&#x27;s the best way to reach you?</span>
@@ -2761,7 +2879,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="33744">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="33747">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-500">Give us a call or send us a text at +1 678-739-7088. Thanks!</p>
                         </dd>
@@ -2782,7 +2900,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-gray-400 rounded  focus:outline-none focus-visible:ring-2 ring-primary"
-                                aria-controls="33745"
+                                aria-controls="33748"
                                 :aria-expanded="expanded"
                             >
                                 <span class="font-medium text-gray-900">Do you provide free estimates?</span>
@@ -2802,7 +2920,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="33745">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="33748">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-500">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -2823,7 +2941,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-gray-400 rounded  focus:outline-none focus-visible:ring-2 ring-primary"
-                                aria-controls="33746"
+                                aria-controls="33749"
                                 :aria-expanded="expanded"
                             >
                                 <span class="font-medium text-gray-900">How are you different?</span>
@@ -2843,7 +2961,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="33746">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="33749">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-500">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -3226,7 +3344,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Sun: 0:00am - 0:00am</a
+                                    >Sun: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -3250,7 +3368,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Wed: 8:00am - 6:00pm</a
+                                    >Wed: 0:00am - 0:00am</a
                                 >
                             </li>
                             
@@ -3258,7 +3376,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Thu: 8:00am - 6:00pm</a
+                                    >Thu: 0:00am - 0:00am</a
                                 >
                             </li>
                             
@@ -3274,7 +3392,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Sat: 0:00am - 0:00am</a
+                                    >Sat: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -3465,82 +3583,82 @@
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128336"
-                                            name="128336"
+                                            id="contact-service-128344"
+                                            name="128344"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128336" class="ml-3 text-sm font-medium text-gray-700">Roof Cleaning</label>
+                                        <label for="contact-label-service-128344" class="ml-3 text-sm font-medium text-gray-700">Roof Cleaning</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128337"
-                                            name="128337"
+                                            id="contact-service-128345"
+                                            name="128345"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128337" class="ml-3 text-sm font-medium text-gray-700">Pressure washing</label>
+                                        <label for="contact-label-service-128345" class="ml-3 text-sm font-medium text-gray-700">Pressure washing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128338"
-                                            name="128338"
+                                            id="contact-service-128346"
+                                            name="128346"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128338" class="ml-3 text-sm font-medium text-gray-700">Commercial Washing</label>
+                                        <label for="contact-label-service-128346" class="ml-3 text-sm font-medium text-gray-700">Commercial Washing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128339"
-                                            name="128339"
+                                            id="contact-service-128347"
+                                            name="128347"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128339" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
+                                        <label for="contact-label-service-128347" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128340"
-                                            name="128340"
+                                            id="contact-service-128348"
+                                            name="128348"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128340" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
+                                        <label for="contact-label-service-128348" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128341"
-                                            name="128341"
+                                            id="contact-service-128349"
+                                            name="128349"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128341" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
+                                        <label for="contact-label-service-128349" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128342"
-                                            name="128342"
+                                            id="contact-service-128350"
+                                            name="128350"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128342" class="ml-3 text-sm font-medium text-gray-700">Gutter cleaning</label>
+                                        <label for="contact-label-service-128350" class="ml-3 text-sm font-medium text-gray-700">Gutter cleaning</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128343"
-                                            name="128343"
+                                            id="contact-service-128351"
+                                            name="128351"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128343" class="ml-3 text-sm font-medium text-gray-700">Other Pressure Washing Services</label>
+                                        <label for="contact-label-service-128351" class="ml-3 text-sm font-medium text-gray-700">Other Pressure Washing Services</label>
                                     </div>
                                 
                             </div>
