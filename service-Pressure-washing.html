@@ -467,8 +467,19 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Roof Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Roof-Washing&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Home Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Home-Washing&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Pressure Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Pressure-Washing&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Pressure Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Pressure-Washing&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Roof Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Roof-Washing&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Home Washing&#x27;, &#x27;href&#x27;: &#x27;gallery-Home-Washing&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
+                                                    <a
+                                                        href=" gallery-Pressure-Washing "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Pressure Washing</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
                                                     <a
                                                         href=" gallery-Roof-Washing "
                                                         role="menuitem"
@@ -487,17 +498,6 @@
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Home Washing</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
-                                                    <a
-                                                        href=" gallery-Pressure-Washing "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">Pressure Washing</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -801,6 +801,12 @@
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             <!-- Render each sublink -->
                                             
+                                                <a href="gallery-Pressure-Washing" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Pressure Washing</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
                                                 <a href="gallery-Roof-Washing" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Roof Washing</p>
@@ -810,12 +816,6 @@
                                                 <a href="gallery-Home-Washing" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Home Washing</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
-                                                <a href="gallery-Pressure-Washing" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">Pressure Washing</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -995,6 +995,51 @@
                         <span id="carousel-content-label" class="sr-only" hidden>Carousel</span>
                         <ul id="services-image-slider" x-ref="slider" tabindex="0" role="listbox" aria-labelledby="carousel-content-label" class="hide-scrollbars">
                             
+                                <li class="translate-z-0" role="option">
+                                    <div class="flex flex-col items-center justify-center w-full p-2 overflow-hidden">
+                                        <div class="h-[229px] sm:h-[481px] overflow-hidden rounded-lg">
+                                            <!-- <img class="object-cover" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/e40e79ef-b8ce-468d-84eb-708d51a3ee96.png" alt="" /> -->
+                                            <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e40e79ef-b8ce-468d-84eb-708d51a3ee96.png" alt="" />
+                                            <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/e40e79ef-b8ce-468d-84eb-708d51a3ee96.png" alt="" /> -->
+                                        </div>
+                                        <!-- <p class="hidden mt-3 text-gray-500 sm:block"> -->
+                                            <!-- TODO: Insert {&#x27;photo&#x27;: &#x27;https://landing-page-app-hero-images.s3.amazonaws.com/media/e40e79ef-b8ce-468d-84eb-708d51a3ee96.png&#x27;, &#x27;order&#x27;: 0, &#x27;fileName&#x27;: &#x27;e40e79ef-b8ce-468d-84eb-708d51a3ee96.png&#x27;} here instead of fixed text -->
+                                            <!--  -->
+                                            <!-- Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. -->
+                                        <!-- </p> -->
+                                    </div>
+                                </li>
+                            
+                                <li class="translate-z-0" role="option">
+                                    <div class="flex flex-col items-center justify-center w-full p-2 overflow-hidden">
+                                        <div class="h-[229px] sm:h-[481px] overflow-hidden rounded-lg">
+                                            <!-- <img class="object-cover" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0e1150da-dd5c-4865-a43e-1d7808c54e6b.png" alt="" /> -->
+                                            <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/0e1150da-dd5c-4865-a43e-1d7808c54e6b.png" alt="" />
+                                            <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/0e1150da-dd5c-4865-a43e-1d7808c54e6b.png" alt="" /> -->
+                                        </div>
+                                        <!-- <p class="hidden mt-3 text-gray-500 sm:block"> -->
+                                            <!-- TODO: Insert {&#x27;photo&#x27;: &#x27;https://landing-page-app-hero-images.s3.amazonaws.com/media/0e1150da-dd5c-4865-a43e-1d7808c54e6b.png&#x27;, &#x27;order&#x27;: 1, &#x27;fileName&#x27;: &#x27;0e1150da-dd5c-4865-a43e-1d7808c54e6b.png&#x27;} here instead of fixed text -->
+                                            <!--  -->
+                                            <!-- Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. -->
+                                        <!-- </p> -->
+                                    </div>
+                                </li>
+                            
+                                <li class="translate-z-0" role="option">
+                                    <div class="flex flex-col items-center justify-center w-full p-2 overflow-hidden">
+                                        <div class="h-[229px] sm:h-[481px] overflow-hidden rounded-lg">
+                                            <!-- <img class="object-cover" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/00159748-c6f0-4c6a-875c-b9bb6881a176.png" alt="" /> -->
+                                            <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/00159748-c6f0-4c6a-875c-b9bb6881a176.png" alt="" />
+                                            <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/00159748-c6f0-4c6a-875c-b9bb6881a176.png" alt="" /> -->
+                                        </div>
+                                        <!-- <p class="hidden mt-3 text-gray-500 sm:block"> -->
+                                            <!-- TODO: Insert {&#x27;photo&#x27;: &#x27;https://landing-page-app-hero-images.s3.amazonaws.com/media/00159748-c6f0-4c6a-875c-b9bb6881a176.png&#x27;, &#x27;order&#x27;: 2, &#x27;fileName&#x27;: &#x27;00159748-c6f0-4c6a-875c-b9bb6881a176.png&#x27;} here instead of fixed text -->
+                                            <!--  -->
+                                            <!-- Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. -->
+                                        <!-- </p> -->
+                                    </div>
+                                </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -1053,7 +1098,9 @@
             <!-- Place the children of the component here -->
             <content>
                 
-                    <p></p>
+                    <p>Pressure washing is a great way to clean your home&#x27;s exterior and remove built-up dirt, grime, and mold. We can help you impress guests and make your home look beautiful while making your home exteriors look better for longer. </p>
+                
+                    <p>Our pressure washing service is a professional and hard working service that will get the job done. We work diligently to clean every surface and remove all the dirt and grime. We take pride in our work and always strive to provide the best possible service.</p>
                 
             </content>
         </div>
@@ -1741,7 +1788,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Sun: 0:00am - 0:00am</a
+                                    >Sun: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -1765,7 +1812,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Wed: 8:00am - 6:00pm</a
+                                    >Wed: 0:00am - 0:00am</a
                                 >
                             </li>
                             
@@ -1773,7 +1820,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Thu: 8:00am - 6:00pm</a
+                                    >Thu: 0:00am - 0:00am</a
                                 >
                             </li>
                             
@@ -1789,7 +1836,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded  hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-offset-2 ring-opacity-75"
-                                    >Sat: 0:00am - 0:00am</a
+                                    >Sat: 8:00am - 6:00pm</a
                                 >
                             </li>
                             
@@ -1980,82 +2027,82 @@
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128336"
-                                            name="128336"
+                                            id="contact-service-128344"
+                                            name="128344"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128336" class="ml-3 text-sm font-medium text-gray-700">Roof Cleaning</label>
+                                        <label for="contact-label-service-128344" class="ml-3 text-sm font-medium text-gray-700">Roof Cleaning</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128337"
-                                            name="128337"
+                                            id="contact-service-128345"
+                                            name="128345"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128337" class="ml-3 text-sm font-medium text-gray-700">Pressure washing</label>
+                                        <label for="contact-label-service-128345" class="ml-3 text-sm font-medium text-gray-700">Pressure washing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128338"
-                                            name="128338"
+                                            id="contact-service-128346"
+                                            name="128346"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128338" class="ml-3 text-sm font-medium text-gray-700">Commercial Washing</label>
+                                        <label for="contact-label-service-128346" class="ml-3 text-sm font-medium text-gray-700">Commercial Washing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128339"
-                                            name="128339"
+                                            id="contact-service-128347"
+                                            name="128347"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128339" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
+                                        <label for="contact-label-service-128347" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128340"
-                                            name="128340"
+                                            id="contact-service-128348"
+                                            name="128348"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128340" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
+                                        <label for="contact-label-service-128348" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128341"
-                                            name="128341"
+                                            id="contact-service-128349"
+                                            name="128349"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128341" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
+                                        <label for="contact-label-service-128349" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128342"
-                                            name="128342"
+                                            id="contact-service-128350"
+                                            name="128350"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128342" class="ml-3 text-sm font-medium text-gray-700">Gutter cleaning</label>
+                                        <label for="contact-label-service-128350" class="ml-3 text-sm font-medium text-gray-700">Gutter cleaning</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-128343"
-                                            name="128343"
+                                            id="contact-service-128351"
+                                            name="128351"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-128343" class="ml-3 text-sm font-medium text-gray-700">Other Pressure Washing Services</label>
+                                        <label for="contact-label-service-128351" class="ml-3 text-sm font-medium text-gray-700">Other Pressure Washing Services</label>
                                     </div>
                                 
                             </div>
