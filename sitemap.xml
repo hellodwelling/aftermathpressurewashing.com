@@ -2,3 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/index</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/store</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/reviews</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/gallery-All</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/gallery-Pressure-Washing</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/gallery-Roof-Washing</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/gallery-Home-Washing</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/service-Pressure-washing</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/service-Commercial-Washing</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/service-Roof-Cleaning</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/service-Home-Softwash</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/service-Driveway-&-Sidewalk-Cleaning</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/service-Deck-&-Patio-Cleaning</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/service-Gutter-cleaning</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aftermathpressurewashing.com/service-Other-Pressure-Washing-Services</loc>
+        <lastmod>2022-04-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+</urlset>
